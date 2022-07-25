@@ -35,9 +35,12 @@ body {
     width: 85vw;
     font-family: 'Edu VIC WA NT Beginner';
     font-size: 0.5rem;
+    padding-left: 2vw;
+    padding-top: 10vh;
+    font-size: 2rem;
 }
 
-#addTask {
+#newTask {
     position: absolute;
     color: #eae7dc;
     background-color: #e85a4f;
@@ -50,10 +53,64 @@ body {
     filter: drop-shadow(0 0 0.75rem black);
 }
 
-#addTask:hover {
+#newTask:hover {
     background-color: #f1827a;
     cursor: pointer;
 }
+
+.popupContent {
+    position: absolute;
+    top: 35vh;
+    bottom: 35vh;
+    left: 40vw;
+    right: 40vw;
+    border: 2px solid  #e85a4f;
+    background-color: #d8c3a5;
+    height: 30vh;
+    width: 20vw;
+    border-radius: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.75rem black);
+    font-size: 1rem;
+    visibility: hidden;
+}
+
+.task:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+#submit {
+    margin-top: 2vh;
+    background-color: #e85a4f;
+    border: 0.2vh solid black;
+    border-radius: 2vh;
+}
+
+#submit:hover {
+    background-color: #f1827a;
+    cursor: pointer;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+fieldset {
+    border: 0;
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
 .footer {
     background-color: #e85a4f;

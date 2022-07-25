@@ -12,6 +12,7 @@
     <div class="main">
       <div class="sidebar"></div>
       <div class="content">
+        <div id="tasks"></div>
         <div class="popupContent" id="myPopup">
           <form id="makeTask">
             <fieldset>
@@ -22,7 +23,7 @@
                   type="text"
                   id="title"
                   name="title"
-                  placeholder="Read a book"
+                  placeholder="Walk the dog"
                 />
               </div>
               <div class="description">
@@ -31,11 +32,11 @@
                   type="text"
                   id="description"
                   name="description"
-                  placeholder="Read the book sir"
+                  placeholder="Stacy needs a walk everyday"
                 />
               </div>
               <div class="dueDate">
-                <label for="dueDate">Pages Read: </label
+                <label for="dueDate">Due Date: </label
                 ><input type="date" id="dueDate" name="dueDate" />
               </div>
               <div class="important">
@@ -43,12 +44,12 @@
                 ><input type="checkbox" id="important" name="important" />
               </div>
               <div>
-                <button onclick="getFormInfo()" type="button">Submit</button>
+                <button id="submit" type="button">Submit</button>
               </div>
             </fieldset>
           </form>
         </div>
-        <button id="addTask" type="button">Add Task!</button>
+        <button id="newTask" type="button">Add Task!</button>
       </div>
     </div>
     <div class="footer">
