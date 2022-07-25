@@ -1,0 +1,1 @@
+(()=>{let e=e();document.getElementById("addTask").addEventListener("click",displayDate),console.log("hi"),e()})();

@@ -26,6 +26,7 @@ body {
     width: 15vw;
     font-family: 'Edu VIC WA NT Beginner';
     font-size: 0.5rem;
+
 }
 
 .content {
@@ -36,7 +37,23 @@ body {
     font-size: 0.5rem;
 }
 
+#addTask {
+    position: absolute;
+    color: #eae7dc;
+    background-color: #e85a4f;
+    border: 2px solid #d8c3a5;
+    right: 15vw;
+    bottom: 15vh;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 0.75rem black);
+}
 
+#addTask:hover {
+    background-color: #f1827a;
+    cursor: pointer;
+}
 
 .footer {
     background-color: #e85a4f;
